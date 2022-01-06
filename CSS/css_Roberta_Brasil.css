@@ -1,0 +1,124 @@
+
+/*reset the page settings*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  display: block;
+  background-color: #bfa98e;
+  width: 100%;
+}
+
+/*Our Staff page - inheritance from section apply features to heading 1 */
+.Ourteam > h1 {
+  color: #73161e;
+  padding-top: 5px;
+  font-size: 40px;
+}
+
+/*Our Staff page - id for specify the features to only this paragraph1 */
+#paragraph1 {
+  text-align: justify;
+  font-size: 25px;
+  color: #73161e;
+  padding-top: 40px;
+}
+/*Our Staff page - I use this container with automatically margen */
+.container {
+  padding-top: 30px;
+}
+
+/*Contact us page - inheritance from the form apply features to heading 2*/
+
+.form > h2 {
+  color: #73161e;
+  font-size: 37px;
+  padding-left: 40px;
+}
+
+/*Contact us page - inheritance from the form apply features to input area*/
+.input,
+textarea {
+  outline-color:blue;
+}
+/*Contact us page - border-around style in the send button*/
+
+.btn {
+  border-radius:60px;
+  border-color: #73161e;
+  text-align: right;
+  font-size: 25px;
+  color:#73161e;
+  float: right;
+  }
+
+/*Contact us page - this apply features to position the location div in the container-fluid2 */
+.location {
+  float: right;
+}
+
+/*Contact us page - inheritance from location apply features to heading 3 */
+.location > h3 {
+  color: #73161e;
+  font-size: 35px;
+}
+/*Our Staff & Contact us page the container-fluid I used to take the 100% width*/
+.container-fluid1 {
+  background-color: #73161e;
+  padding: 3px;
+}
+
+.container-fluid2 {
+  margin: 0px;
+  padding: 25px 0px 0px 20px;
+  background-color: #73161e;
+}
+
+/*Contact us page - */
+.container-fluid3 {
+  background-color: #bfa98e;
+  padding-bottom: 40px;
+}
+
+/*Contact us page - inheritance from footer .col-12 apply features to heading4 */
+.col-12 > h4 {
+  text-align: center;
+  color: #bfa98e;
+  font-size: 30px;
+}
+
+.row {
+  margin: 0px;
+  padding: 40px 0px 0px 30px;
+  font-size: 20px;
+  color: #73161e;
+}
+
+/*Contact us page - inheritance from the footer .col-12 apply features to paragraph */
+.col-12 > p {
+  text-align: center;
+  color: #bfa98e;
+}
+
+/*Our staff and Contact us page - footer settings*/
+
+.col-12 {
+  text-align: right;
+}
+
+.social-icons {
+  text-align: right;
+}
+
+.column1 p {
+  color: #bfa98e;
+  text-align: left;
+}
+
+.column2 p {
+  text-align: center;
+  color: #bfa98e;
+}

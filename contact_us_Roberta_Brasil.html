@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This page was created by Roberta Brasil-->
+
+<head>
+  <!--Meta tags-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Page title -->
+  <title>Contact us</title>
+
+  <!-- Bootstrap CSS Js -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- CSS created by Roberta Brasil -->
+  <link rel="stylesheet" href="css/css_Roberta_Brasil.css">
+
+  <!-- Main CSS created by Edson Nascimento -->
+  <link rel="stylesheet" href="./external.css">
+
+  <!-- CSS created by Roberta Brasil -->
+  <script src="js_Roberta_Brasil.js"></script>
+
+</head>
+
+<body>
+  <header>
+
+    <!-- This Nav was created by Edson Nascimento -->
+    <nav>
+      <a class="logo" href="/">Panama Coffee</a>
+      <ul class="nav-list">
+        <li><a href=".//index.html">HOME</a></li>
+        <li><a href="../about_us_Luisa_Nunes.html">ABOUT US</a></li>
+        <li><a href=".//menu.html">MENU</a></li>
+        <li><a href="">OUR STAFF</a></li>
+        <li><a href="../news_Luisa_Nunes.html">NEWS</a></li>
+        <li><a href="../contact_us_Roberta_Brasil.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- this container from bootstrap holds the forms and map location has the width 100%-->
+
+  <div class="container-fluid3">
+    <div class="row">
+      <div class="col-7">
+
+        <!-- My form start here-->
+        <form action="MAILTO:x17168732@student.ncirl.ie" method="post" id="contact" enctype="text/plain">
+
+          <h2>Contact us</h2> <br>
+
+          <div class="row mb-4">
+            <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-xs-4 col-xl-6">
+              <input type="text" class="form-control" id="inputName" name="name" placeholder="Please enter your name">
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-xs-4 col-xl-6">
+              <input type="email" class="form-control" id="inputEmail" name="email"
+                placeholder="Please enter your email">
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <label for="inputPhone" class="col-sm-2 col-form-label">Phone Number</label>
+            <div class="col-xs-4 col-xl-6">
+              <input type="number" class="form-control" id="inputPhone" name="phone">
+            </div>
+          </div>
+
+          <fieldset class="row mb-3">
+
+            <legend class="col-form-label col-sm-2 pt-0">How would you like to be contacted?</legend>
+
+            <div class="col-xs-4 col-xl-6">
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">By Phone</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">By email</label>
+              </div>
+              <br>
+              <br>
+
+              <label for="message" class="col-sm-2 col-form-label">Message:</label>
+              <div class="messageSpace">
+                <textarea class="form-control" rows="5" id="message" name="text" placeholder="Message"></textarea>
+              </div>
+            </div>
+
+          </fieldset>
+          <div class="col-xl-8">
+            <button type="submit" class="btn">Send</button>
+            <p id="Succcess"></p>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- this div holds my map settings-->
+
+      <div class="col-xs-4 col-md-6 col-xl-4">
+
+        <div class="location">
+          <h3>Find Panama Coffee Shop</h3><br>
+          <div class="row"></div>
+
+          <!-- This link embed the map from google maps-->
+          <iframe id="mapPanama"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2344.9103388421804!2d-6.4052699846889185!3d54.00436703292023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4860cea7029749d7%3A0x8dab96413705d02c!2sPanama%20Coffee!5e0!3m2!1sen!2sbr!4v1639598696646!5m2!1sen!2sbr"
+            width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- here starts my footer-->
+
+  <footer class="footer">
+    <div class="container-fluid1">
+      <div class="row">
+        <div class="col-12">
+
+          <h4>Working-time</h4> <br>
+          <p>Monday 8AM–6:15PM</p>
+          <p>Tuesday 8AM–6:15PM</p>
+          <p>Wednesday 8AM–6:15PM</p>
+          <p>Thursday 8AM–6:15PM </p>
+          <p>Friday 8AM–6:15PM</p>
+          <p>Saturday 8AM–6:15PM</p>
+          <p>Sunday 10AM–5PM</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid2">
+      <!-- this is the setting to the social network icons-->
+
+      <div class="col-12">
+
+        <a class="btn" href="https://www.facebook.com/Panama-Coffee-266836256750898">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="btn"
+          href="https://api.whatsapp.com/send?phone=353879801581&app=facebook&entry_point=page_cta&fbclid=IwAR1ZVSlB0jsghyu_hrS8tamyjKenCXrrzU8HeU2rX6TljvRsc4SYERgrFBM">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a class="btn" href="https://www.instagram.com/panamacoffee/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="btn" href="">
+          <i class="far fa-envelope"></i>
+        </a>
+
+      </div>
+      <!-- this sets to the currently time-->
+
+      <div class="column1">
+        <p>Currently Time</p>
+        <script>document.write(Date());</script>
+      </div>
+
+      <!-- this holds the copyrights-->
+      <div class="column2">
+        <p> Copyright &copy; Panama Coffee shop </p>
+      </div>
+
+    </div>
+    </footer>
+
+</body>
+
+</html>

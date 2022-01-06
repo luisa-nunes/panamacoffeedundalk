@@ -1,0 +1,217 @@
+
+/*reset the page settings*/
+
+  * {
+          padding: 0;
+          margin: 0;
+}
+
+  .container-fluid {
+          display: block;
+          background-color: #bfa98e;
+          width: 100%;
+}
+
+
+
+/* News Page style = Media Content views  */
+
+img{
+    max-width: 100%;
+}
+.container{
+    margin-right: auto;    
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 980px;
+}
+
+
+.people-cards{
+    margin-top: 2.5em;
+}
+
+.people-cards__card{
+    
+}
+.people-cards__card:hover{
+    outline: 5px solid #73161e;
+    outline-offset: -5px;
+}
+.people-cards__card:hover .people-cards__avatar img{
+    transform: translateY(-50%);
+}
+.people-cards__card:hover .people-cards__title,
+.people-cards__card:hover .people-cards__text{
+    color: #73161e;
+}
+
+.people-cards__image{
+    width: 100%;
+}
+
+.people-cards__avatar{
+    margin: -55px auto;
+    width: 88px;
+    height: 88px;
+    overflow: hidden;
+}
+.people-cards__content{
+    text-align: center;
+    padding: 40px 25px 10px;
+    border-left: 1px solid #bfa98e;
+}
+.people-cards__title{
+    color: #212529;
+    font-size: 21px;
+    font-weight: normal;
+}
+.people-cards__text{
+    color: #212529;
+    font-size: 14px;    
+}
+
+/* News Page style = News about the Panama Coffee  */
+.content{
+    background: #f8f9f9;
+    padding: 20px 0 80px;
+    border-top: 1px solid #bfa98e;
+}
+
+.content h3{
+    color: #73161e;
+    font-size: 21px;
+    padding-top: 40px;
+    font-weight: 400;
+}
+.content p{
+    color: #212529;
+    font-size: 14px;
+    word-spacing: 3px;
+}
+.button{
+    padding: 15px 40px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    transition: background .5s;
+}
+.button:hover{
+    background-color: #bfa98e;
+}
+.button-primary{
+    background-color: #bfa98e;
+    color: white;
+}
+.button-secundary{
+    background-color: #bfa98e;
+    color: white;
+}
+
+/* News Page style = Customer reviews  */
+.slideshow{
+    white-space: nowrap;
+}
+.slideshow figure{
+    display: inline-block;
+}
+
+.quote-container{
+    background-color: #73161e;
+    padding: 50px 0;
+    border-bottom: 12px solid #91262f;
+}
+
+.quote-slideshow h2{
+    color: #bfa98e;;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    
+
+   
+}
+
+.quote-slideshow figcaption{
+    color: #bfa98e;;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.no-js .quote-slideshow figure + figure{
+    margin-top: 5em;
+}
+
+.js .quote-slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    color: white;
+}
+.js .quote-slideshow figure h2{
+    margin-top: 0;
+}
+.js .quote-slideshow figure{
+    opacity: 0;
+    transition: 1s opacity;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 50px;
+    box-sizing: border-box;
+    margin: 0;
+}
+.js .quote-slideshow figure.show{
+    opacity: 1;
+    position: static;
+    
+}
+.js .quote-slideshow .prev, .js .quote-slideshow .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.js .quote-slideshow .prev{
+    left: 10px;
+}
+.js .quote-slideshow .next{
+    right: 10px;
+}
+
+@media screen and (min-width: 1024px){
+    .header{
+        position: fixed;
+    }
+    
+    
+    .people-cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+    }
+    
+    
+    .content .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+/*Footer*/
+
+    .news footer{
+            font-family: Times new roman, times, serif;
+            font-style: normal;
+            background: #006341;
+            padding: 10px;
+
+}
